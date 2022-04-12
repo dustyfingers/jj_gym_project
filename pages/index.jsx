@@ -1,9 +1,8 @@
 import { useState } from 'react'
-function Header({ title }) {
-  return <h1>{title ? title : 'Default title'}</h1>
-}
 
-export default function HomePage() {
+import Header from 'components/Header'
+
+const LandingPage = () => {
   const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']
 
   const [likes, setLikes] = useState(0)
@@ -25,3 +24,5 @@ export default function HomePage() {
     </div>
   )
 }
+
+export default LandingPage
