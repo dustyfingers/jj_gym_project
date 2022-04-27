@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Button from '@mui/material/Button';
 
-import Header from 'components/Header'
+import Header from 'components/Header';
 
 const LandingPage = () => {
   const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']
@@ -20,7 +21,7 @@ const LandingPage = () => {
         ))}
       </ul>
 
-      <button onClick={handleClick}>Like ({likes})</button>
+      <Button variant={'contained'} color={'primary'} onClick={handleClick}>Like ({likes})</Button>
     </div>
   )
 }
