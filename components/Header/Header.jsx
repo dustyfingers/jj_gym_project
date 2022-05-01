@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Image from  'next/image';
 import { 
     AppBar, 
     Container,
@@ -8,31 +9,29 @@ import {
 import TopbarMenu from 'components/TOpbarMenu';
 import TopbarMenuMobile from 'components/TopbarMenuMobile';
 
-import useWindowDimensions from 'hooks/useWindowDimensions';
-
 import styles from './Header.module.scss';
 
-// if window width is less than 767px show the hamburger icon
 const Header = ({ title }) => {
 
-    const [dimensions, setDimensions] = useState(null);
-
-    // useEffect(() => {
-    //     const { height, width } = useWindowDimensions();
-
-    //     setDimensions({ height, width })
-    // }, [])
-
     return (
-        <AppBar position="static" className={styles.topbar}>
+        <AppBar position="static" className={styles.header}>
             <Container>
 
-                <div className={styles.topbar_content}>
+                <div className={styles.header_content}>
 
-                    <div>
-                        <Typography variant="h6" className={styles.title}>
-                            Renzo Gracie Colorado // Brazilian Jiu Jitsu Academy
-                        </Typography>
+                    <div className={styles.header_lead_container}>
+                        <div className={styles.logo_wrapper}>
+                            <Image src="/images/renzo-gracie-logo-white.png" height={'32px'} width={'32px'} />
+                        </div>
+                        <div className={styles.title_container}>
+                            <Typography variant="h5" className={styles.title}>
+                                Renzo Gracie Colorado BJJ Academy
+                            </Typography>
+                            <Typography variant="p" className={styles.title}>
+                                
+                            </Typography>
+                        </div>
+
                     </div>
 
                     <div>

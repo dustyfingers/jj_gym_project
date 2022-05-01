@@ -1,21 +1,27 @@
-.topbar_content {
+.header_content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px dotted gold;
+    width: 100%;
 }
 
-.topbar {
+.header {
     background: rgba(0,0,0,0);
-    color: black;
     padding: 8px 0px;
 }
 
-.title {
-    border: 1px dashed magenta;
-    display: inline-block;
+.header_lead_container {
+    display: inline-flex;
+    align-items: center;
 }
 
-.menuButton {
-    border: 1px solid green;
+.logo_wrapper {
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: inline-block;
 }
