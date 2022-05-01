@@ -1,3 +1,21 @@
-.test {
-    border: 1px solid red;
+.topbar_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px dotted gold;
+}
+
+.topbar {
+    background: rgba(0,0,0,0);
+    color: black;
+    padding: 8px 0px;
+}
+
+.title {
+    border: 1px dashed magenta;
+    display: inline-block;
+}
+
+.menuButton {
+    border: 1px solid green;
 }
